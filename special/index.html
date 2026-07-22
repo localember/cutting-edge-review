@@ -8,15 +8,15 @@
                 
 <!-- Search Engine Optimization by Rank Math PRO - https://rankmath.com/ -->
 <title>Book An Appointment - Cutting Edge Chiropractic</title>
-<meta name="robots" content="noindex, nofollow, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
+<meta name="robots" content="noindex, nofollow"/>
 <link rel="canonical" href="./" />
 <meta property="og:locale" content="en_US" />
 <meta property="og:type" content="article" />
 <meta property="og:title" content="Book An Appointment - Cutting Edge Chiropractic" />
 <meta property="og:description" content="Book An Appointment" />
-<meta property="og:url" content="https://example.com/special/" />
+<meta property="og:url" content="https://PLACEHOLDER_DOMAIN/special/" />
 <meta property="og:site_name" content="Cutting Edge Chiropractic" />
-<meta property="og:updated_time" content="2026-07-22T02:03:25+00:00" />
+<meta property="og:updated_time" content="2026-07-22T19:15:06+00:00" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Book An Appointment - Cutting Edge Chiropractic" />
 <meta name="twitter:description" content="Book An Appointment" />
@@ -59,134 +59,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 <link rel="https://api.w.org/" href="../wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="../wp-json/wp/v2/pages/271" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="../xmlrpc.php" />
 <meta name="generator" content="WordPress 7.0.2" />
 <link rel='shortlink' href='../' />
-<style type='text/css'  class='wpcb2-inline-style'>
-/* Cutting Edge Chiropractic — STATIC styles (always on; NOT motion). Sandbox verify now; becomes a WPCodeBox CSS
-   snippet for the deliverable. Holds decorative details + global overrides that Breakdance can't
-   express natively as a section background. */
-
-/* Content width (1240 max-width, 28px gutter) is now set NATIVELY in Breakdance -> Settings -> Containers
-   (container_width 1240, horizontal_padding 28; vertical 100 + gap 32 are BD defaults kept explicit).
-   Set via tools/bd-generator/write-global-layout.php — no CSS override needed. */
-
-/* Hero HUD (telemetry): position is STATIC presentation (not motion). Escape the boxed .section-container
-   so right/bottom are measured from the section edge, and sit level with the CTA row. (The fade-in is motion.) */
-#ksc-hero { position: relative; }
-#ksc-hero > .section-container { position: static; }
-.ksc-hud { bottom: 72px !important; }
-
-/* Marquee: full-bleed band + colored dots are STATIC presentation (only the infinite scroll is motion).
-   Targeted structurally so they render with motion OFF too. Row = the inner .bde-div of #ksc-marquee. */
-#ksc-marquee { border-top: 1px solid rgba(120, 160, 220, .13); border-bottom: 1px solid rgba(120, 160, 220, .13); }
-#ksc-marquee > .section-container { max-width: none; padding-left: 0; padding-right: 0; }
-#ksc-marquee .section-container > .bde-div { width: 100%; overflow: hidden; }
-#ksc-marquee .section-container > .bde-div > .bde-div { justify-content: center; }
-#ksc-marquee .section-container > .bde-div > .bde-div > .bde-text { display: inline-flex; align-items: center; gap: 34px; }
-#ksc-marquee .section-container > .bde-div > .bde-div > .bde-text::after { content: ""; width: 7px; height: 7px; border-radius: 50%; background: #1F8BFF; flex: 0 0 auto; }
-#ksc-marquee .section-container > .bde-div > .bde-div > .bde-text:nth-child(3n)::after { background: #D8823A; }
-
-/* Stats band: subtle grid pattern overlay with a radial fade (mockup .stats::before). */
-#ksc-stats { position: relative; overflow: hidden; }
-#ksc-stats::before {
-  content: ""; position: absolute; inset: 0; pointer-events: none; z-index: 0;
-  background-image:
-    linear-gradient(rgba(255, 255, 255, .07) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, .07) 1px, transparent 1px);
-  background-size: 54px 54px;
-  -webkit-mask-image: radial-gradient(circle at 80% 30%, #000, transparent 75%);
-  mask-image: radial-gradient(circle at 80% 30%, #000, transparent 75%);
-}
-#ksc-stats > .section-container { position: relative; z-index: 1; }
-
-/* Process: thin connecting line across the step circles (mockup .proc-line). The white circles sit on
-   top of it. z-index:0 keeps it behind the step content. (The sky "fill" that grows is motion, later.) */
-.ksc-proc-steps { position: relative; }
-.ksc-proc-steps::before { content: ""; position: absolute; top: 27px; left: 8%; right: 8%; height: 2px; background: #CFDCEF; z-index: 0; }
-.ksc-proc-steps > .bde-div { position: relative; z-index: 1; }
-/* mobile: steps stack vertically, so the horizontal connecting line + its scroll-fill are orphaned — hide
-   them (matches the mockup hiding .proc-line when the steps go 1-col). Uses BD's phone_landscape breakpoint. */
-@media (max-width: 767px) { .ksc-proc-steps::before, .ksc-proc-steps::after { display: none; } }
-
-/* Stat tiles: frosted glass — the mockup's translucent white + blur(4px) softens the grid behind them
-   (BD can't do backdrop-filter natively). */
-.ksc-stat-tile { -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px); }
-
-/* Service cards: hover-lift + border + a radial glow that follows the cursor (mockup .svc). The lift +
-   border + glow-on-hover are pure CSS (work with JS off); the cursor-follow position (--mx/--my) is set
-   by the motion snippet — with JS off the glow just centers on hover, which still looks right. */
-.ksc-svc { position: relative; overflow: hidden; transition: transform .4s cubic-bezier(.16,1,.3,1), border-color .4s; }
-.ksc-svc::before { content: ""; position: absolute; inset: 0; z-index: 0; pointer-events: none; opacity: 0; transition: opacity .4s; background: radial-gradient(380px circle at var(--mx,50%) var(--my,0%), rgba(31,139,255,.12), transparent 60%); }
-.ksc-svc:hover::before { opacity: 1; }
-.ksc-svc:hover { transform: translateY(-6px); border-color: rgba(31,139,255,.45) !important; }
-.ksc-svc > * { position: relative; z-index: 1; }
-
-/* About figure: the radius/border/shadow + badge pill are NATIVE (see specs/cutting-edge.mjs). Only the
-   overflow-clip, portrait 4/5 crop, and the badge's absolute position + blur are non-native (here). */
-/* Figure box is sized by width + 4/5 aspect (the video/image are taken out of flow so they can't
-   collapse the box). BD renders <video> position:absolute inside a .bde-video wrapper. */
-.ksc-about-fig { position: relative; overflow: hidden; aspect-ratio: 4 / 5; width: 100%; }
-/* .bde-video wraps an .ee-video-container that BD sizes to the video's own ratio (a 1:1 box here) — force
-   both to fill the 4/5 figure so object-fit:cover crops the video to the frame (no letterbox). */
-.ksc-about-fig > .bde-video, .ksc-about-fig > .bde-image, .ksc-about-fig .ee-video-container { position: absolute !important; inset: 0; width: 100%; height: 100%; padding: 0; }
-.ksc-about-fig video, .ksc-about-fig img { width: 100%; height: 100%; object-fit: cover; display: block; }
-/* !important beats BD's `.breakdance .bde-div{position:relative}` (0,2,0) so the pill anchors to the figure */
-.ksc-about-badge { position: absolute !important; top: 16px; left: 16px; z-index: 2; -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); }
-
-/* Quote form: BD's default form theme is LIGHT (white inputs + near-black labels, invisible on our dark
-   card). Restyle to the mockup — dark inputs, hairline borders, steel labels, 2-col field rows. Scoped to
-   #ksc-quote. (The invest-popup form will get its own scoping when that native popup is built.) */
-/* BD lays the form out on a 12-col grid (each field defaults to span 12 = full row). Keep that grid and
-   just halve the four short fields so Name|Company and Email|Phone pair up; select/textarea/submit stay full. */
-#ksc-quote .breakdance-form { gap: 16px; }
-#ksc-quote .breakdance-form-field { margin: 0; }
-#ksc-quote .breakdance-form-field--text,
-#ksc-quote .breakdance-form-field--email { grid-column: span 6; }
-#ksc-quote .breakdance-form-field--select,
-#ksc-quote .breakdance-form-field--textarea,
-#ksc-quote .breakdance-form-footer { grid-column: span 12; }
-#ksc-quote .breakdance-form-field__label { display: block; font-size: .78rem; color: #8A9BB3; margin-bottom: 7px; font-weight: 500; text-transform: none; letter-spacing: 0; }
-#ksc-quote .breakdance-form-field__required { color: #5FB8FF; }
-#ksc-quote .breakdance-form-field__input {
-  width: 100%; background: #070B14; border: 1px solid rgba(120, 160, 220, .22); border-radius: 9px;
-  padding: 13px 14px; color: #EAF1FB; font-family: inherit; font-size: .95rem;
-  transition: border-color .25s, box-shadow .25s;
-}
-#ksc-quote .breakdance-form-field__input:focus { outline: none; border-color: #1F8BFF; box-shadow: 0 0 0 3px rgba(31, 139, 255, .15); }
-#ksc-quote textarea.breakdance-form-field__input { resize: vertical; min-height: 88px; }
-#ksc-quote .breakdance-form-button__submit { width: 100%; justify-content: center; margin-top: 8px; }
-#ksc-quote .ksc-quote-fine { text-align: center; }
-/* mobile: the BD form is a CSS grid (not native flex), so the 2-up field pairs need a media query to
-   go full-width. Matches BD's phone_landscape breakpoint (<=767) used for the section stacking. */
-@media (max-width: 767px) {
-  #ksc-quote .breakdance-form-field--text,
-  #ksc-quote .breakdance-form-field--email { grid-column: span 12; }
-}
-
-/* header CTA "Get a quote": the narrow header squeezes it to ~120px and it wraps to 2 lines. Keep it on
-   one line (nowrap so it sizes to its text) and tighten the padding on the smallest widths so it stays
-   compact. Scoped to the header button so the shared Primary preset (hero CTA) is untouched. */
-@media (max-width: 767px) { header .bde-button__button { white-space: nowrap; } }
-@media (max-width: 479px) {
-  header .bde-button__button { padding-left: 14px; padding-right: 14px; }
-  .ksc-brand-sub { display: none; } /* hide "Aerial Exterior Cleaning" on phones (declutter the lockup) */
-}
-
-/* Invest popup (native breakdance_popup, opened by the header "Invest" menu link's popup action). The
-   Popup element's container bg/width design + form theme don't apply reliably from the generated tree, so
-   style the panel + form here, scoped to the popup wrapper's html id #ksc-invest-popup (popup_html_id). */
-#ksc-invest-popup .breakdance-popup-content { position: relative; background: #0A101E !important; max-width: 480px !important; border-radius: 16px; border: 1px solid rgba(120, 160, 220, .22); box-shadow: 0 30px 80px -30px #000000b3; }
-/* close button is moved into the panel (motion snippet) — anchor it to the panel's top-right corner */
-#ksc-invest-popup .breakdance-popup-close-button { background: transparent !important; top: 14px !important; right: 14px !important; left: auto !important; }
-#ksc-invest-popup .breakdance-popup-close-icon svg { fill: #8A9BB3; }
-#ksc-invest-popup .breakdance-popup-close-icon svg:hover { fill: #EAF1FB; }
-#ksc-invest-popup .breakdance-form { gap: 14px; }
-#ksc-invest-popup .breakdance-form-field { margin: 0; }
-#ksc-invest-popup .breakdance-form-field__label { display: block; font-size: .78rem; color: #8A9BB3; margin-bottom: 7px; font-weight: 500; text-transform: none; letter-spacing: 0; }
-#ksc-invest-popup .breakdance-form-field__required { color: #5FB8FF; }
-#ksc-invest-popup .breakdance-form-field__input { width: 100%; background: #070B14; border: 1px solid rgba(120, 160, 220, .22); border-radius: 9px; padding: 13px 14px; color: #EAF1FB; font-family: inherit; font-size: .95rem; transition: border-color .25s, box-shadow .25s; }
-#ksc-invest-popup .breakdance-form-field__input:focus { outline: none; border-color: #1F8BFF; box-shadow: 0 0 0 3px rgba(31, 139, 255, .15); }
-#ksc-invest-popup .breakdance-form-button__submit { width: 100%; justify-content: center; margin-top: 6px; }
-
-</style><!-- [HEADER ASSETS] -->
+<!-- [HEADER ASSETS] -->
 <link rel="stylesheet" href="../wp-content/uploads/breakdance/font_styles/custom_font_poppins.css" />
 <link rel="stylesheet" href="../wp-content/plugins/breakdance/subplugins/breakdance-elements/dependencies-files/breakdance-fancy-background@1/fancy-background.css" />
 <link rel="stylesheet" href="../wp-content/plugins/breakdance/subplugins/breakdance-elements/dependencies-files/awesome-menu@1/awesome-menu.css" />
@@ -373,9 +246,9 @@ VISIT US:
 
 
 <div class="bde-image-241-112 bde-image">
-<figure class="breakdance-image breakdance-image--240">
+<figure class="breakdance-image breakdance-image--511">
 	<div class="breakdance-image-container">
-		<div class="breakdance-image-clip"><a class="breakdance-image-link breakdance-image-link--url" href="../" target="_self" rel="noopener" data-sub-html="" data-lg-size="-"><img class="breakdance-image-object" src="../wp-content/uploads/2026/07/Logo.webp" width="400" height="100" srcset="../wp-content/uploads/2026/07/Logo.webp 400w, ../wp-content/uploads/2026/07/Logo-300x75.webp 300w" sizes="(max-width: 400px) 100vw, 400px"></a></div>
+		<div class="breakdance-image-clip"><a class="breakdance-image-link breakdance-image-link--url" href="../" target="_self" rel="noopener" data-sub-html="" data-lg-size="-"><img class="breakdance-image-object" src="../wp-content/uploads/2026/07/cutting-edge-logo.webp" width="800" height="200" srcset="../wp-content/uploads/2026/07/cutting-edge-logo.webp 800w, ../wp-content/uploads/2026/07/cutting-edge-logo-300x75.webp 300w, ../wp-content/uploads/2026/07/cutting-edge-logo-768x192.webp 768w" sizes="(max-width: 800px) 100vw, 800px"></a></div>
 	</div></figure>
 
 </div>
@@ -506,7 +379,7 @@ VISIT US:
     
     
     
-    <a class="breakdance-link button-atom button-atom--custom bde-button__button" href="./" target="_self" data-type="url"  >
+    <a class="breakdance-link button-atom button-atom--custom bde-button__button" href="https://clinic.patienthealthcenters.org/book?clinic=CUTTIR23BDCT" target="_blank" data-type="url"  >
 
     
         <span class="button-atom__text">Book Appointment</span>
@@ -580,76 +453,76 @@ Book An Appointment
 <iframe width="100%" height="100%" style="border:0" loading="lazy" title="Map" src="https://maps.google.com/maps?q=Cutting+Edge+Chiropractic%3Cbr%3E387+Merrow+Road%3Cbr%3ETolland%2C+CT+06084&t=m&z=16&output=embed&iwloc=near" allowfullscreen></iframe>
 </div>
 </div></div><div class="bde-globalblock-271-109 bde-globalblock"></div></div>
-</section></main><section class="bde-section-238-150 bde-section">
+</section></main><section class="bde-section-238-1791 bde-section">
   
   
 	
 
 
 
-<div class="section-container"><div class="bde-div-238-151 bde-div">
+<div class="section-container"><div class="bde-div-238-1792 bde-div">
   
   
 	
 
 
 
-<div class="bde-text-238-152 bde-text">
+<div class="bde-text-238-1793 bde-text">
 Explore our care
-</div><div class="bde-div-238-153 bde-div">
+</div><div class="bde-div-238-1794 bde-div">
   
   
 	
 
 
 
-<div class="bde-div-238-154 bde-div">
+<div class="bde-div-238-1795 bde-div">
   
   
 	
 
 
 
-<h4 class="bde-heading-238-155 bde-heading">
+<h4 class="bde-heading-238-1796 bde-heading">
 Conditions
-</h4><div class="bde-rich-text-238-156 bde-rich-text breakdance-rich-text-styles">
-<ul><li><a href="../extremity-pain/" style="color:var(--bde-palette-color-1-4b7fff75-56a4-4cbc-a5e3-3fad9b8215cc)">Arm & leg pain</a></li><li><a href="../arthritis/" style="color:var(--bde-palette-color-1-4b7fff75-56a4-4cbc-a5e3-3fad9b8215cc)">Arthritis</a></li><li><a href="../back-pain/" style="color:var(--bde-palette-color-1-4b7fff75-56a4-4cbc-a5e3-3fad9b8215cc)">Back pain</a></li><li><a href="../carpal-tunnel/" style="color:var(--bde-palette-color-1-4b7fff75-56a4-4cbc-a5e3-3fad9b8215cc)">Carpal tunnel syndrome</a></li><li><a href="../disc-injury/" style="color:var(--bde-palette-color-1-4b7fff75-56a4-4cbc-a5e3-3fad9b8215cc)">Disc injury</a></li><li><a href="../headaches/" style="color:var(--bde-palette-color-1-4b7fff75-56a4-4cbc-a5e3-3fad9b8215cc)">Headaches & migraines</a></li></ul>
+</h4><div class="bde-rich-text-238-1797 bde-rich-text breakdance-rich-text-styles">
+<ul><li><a href="../extremity-pain/" style="color:var(--bde-palette-color-1-4b7fff75-56a4-4cbc-a5e3-3fad9b8215cc)">Arm & leg pain</a></li><li><a href="../arthritis/" style="color:var(--bde-palette-color-1-4b7fff75-56a4-4cbc-a5e3-3fad9b8215cc)">Arthritis</a></li><li><a href="../auto-injury/" style="color:var(--bde-palette-color-1-4b7fff75-56a4-4cbc-a5e3-3fad9b8215cc)">Auto injury</a></li><li><a href="../back-pain/" style="color:var(--bde-palette-color-1-4b7fff75-56a4-4cbc-a5e3-3fad9b8215cc)">Back pain</a></li><li><a href="../carpal-tunnel/" style="color:var(--bde-palette-color-1-4b7fff75-56a4-4cbc-a5e3-3fad9b8215cc)">Carpal tunnel syndrome</a></li><li><a href="../disc-injury/" style="color:var(--bde-palette-color-1-4b7fff75-56a4-4cbc-a5e3-3fad9b8215cc)">Disc injury</a></li><li><a href="../headaches/" style="color:var(--bde-palette-color-1-4b7fff75-56a4-4cbc-a5e3-3fad9b8215cc)">Headaches & migraines</a></li></ul>
 </div>
-</div><div class="bde-div-238-157 bde-div">
+</div><div class="bde-div-238-1798 bde-div">
   
   
 	
 
 
 
-<h4 class="bde-heading-238-158 bde-heading">
+<h4 class="bde-heading-238-1799 bde-heading">
  
-</h4><div class="bde-rich-text-238-159 bde-rich-text breakdance-rich-text-styles">
-<ul><li><a href="../hip-pain/" style="color:var(--bde-palette-color-1-4b7fff75-56a4-4cbc-a5e3-3fad9b8215cc)">Hip pain</a></li><li><a href="../knee-pain/" style="color:var(--bde-palette-color-1-4b7fff75-56a4-4cbc-a5e3-3fad9b8215cc)">Knee pain</a></li><li><a href="../neck-pain/" style="color:var(--bde-palette-color-1-4b7fff75-56a4-4cbc-a5e3-3fad9b8215cc)">Neck pain</a></li><li><a href="../plantar-fasciitis/" style="color:var(--bde-palette-color-1-4b7fff75-56a4-4cbc-a5e3-3fad9b8215cc)">Plantar fasciitis</a></li><li><a href="../pregnancy/" style="color:var(--bde-palette-color-1-4b7fff75-56a4-4cbc-a5e3-3fad9b8215cc)">Pregnancy-related spinal stress</a></li><li><a href="../sciatica/" style="color:var(--bde-palette-color-1-4b7fff75-56a4-4cbc-a5e3-3fad9b8215cc)">Sciatica</a></li></ul>
+</h4><div class="bde-rich-text-238-1800 bde-rich-text breakdance-rich-text-styles">
+<ul><li><a href="../hip-pain/" style="color:var(--bde-palette-color-1-4b7fff75-56a4-4cbc-a5e3-3fad9b8215cc)">Hip pain</a></li><li><a href="../knee-pain/" style="color:var(--bde-palette-color-1-4b7fff75-56a4-4cbc-a5e3-3fad9b8215cc)">Knee pain</a></li><li><a href="../neck-pain/" style="color:var(--bde-palette-color-1-4b7fff75-56a4-4cbc-a5e3-3fad9b8215cc)">Neck pain</a></li><li><a href="../plantar-fasciitis/" style="color:var(--bde-palette-color-1-4b7fff75-56a4-4cbc-a5e3-3fad9b8215cc)">Plantar fasciitis</a></li><li><a href="../pregnancy/" style="color:var(--bde-palette-color-1-4b7fff75-56a4-4cbc-a5e3-3fad9b8215cc)">Pregnancy-related spinal stress</a></li><li><a href="../sciatica/" style="color:var(--bde-palette-color-1-4b7fff75-56a4-4cbc-a5e3-3fad9b8215cc)">Sciatica</a></li><li><a href="../scoliosis/" style="color:var(--bde-palette-color-1-4b7fff75-56a4-4cbc-a5e3-3fad9b8215cc)">Scoliosis</a></li></ul>
 </div>
-</div><div class="bde-div-238-160 bde-div">
+</div><div class="bde-div-238-1801 bde-div">
   
   
 	
 
 
 
-<h4 class="bde-heading-238-161 bde-heading">
+<h4 class="bde-heading-238-1802 bde-heading">
  
-</h4><div class="bde-rich-text-238-162 bde-rich-text breakdance-rich-text-styles">
-<ul><li><a href="../scoliosis/" style="color:var(--bde-palette-color-1-4b7fff75-56a4-4cbc-a5e3-3fad9b8215cc)">Scoliosis</a></li><li><a href="../shoulder-pain/" style="color:var(--bde-palette-color-1-4b7fff75-56a4-4cbc-a5e3-3fad9b8215cc)">Shoulder pain</a></li><li><a href="../sports-injury/" style="color:var(--bde-palette-color-1-4b7fff75-56a4-4cbc-a5e3-3fad9b8215cc)">Sports injury</a></li><li><a href="../vertigo/" style="color:var(--bde-palette-color-1-4b7fff75-56a4-4cbc-a5e3-3fad9b8215cc)">Vertigo</a></li><li><a href="../whiplash/" style="color:var(--bde-palette-color-1-4b7fff75-56a4-4cbc-a5e3-3fad9b8215cc)">Whiplash</a></li><li><a href="../work-injury/" style="color:var(--bde-palette-color-1-4b7fff75-56a4-4cbc-a5e3-3fad9b8215cc)">Work injury</a></li></ul>
+</h4><div class="bde-rich-text-238-1803 bde-rich-text breakdance-rich-text-styles">
+<ul><li><a href="../shoulder-pain/" style="color:var(--bde-palette-color-1-4b7fff75-56a4-4cbc-a5e3-3fad9b8215cc)">Shoulder pain</a></li><li><a href="../sports-injury/" style="color:var(--bde-palette-color-1-4b7fff75-56a4-4cbc-a5e3-3fad9b8215cc)">Sports injury</a></li><li><a href="../vertigo/" style="color:var(--bde-palette-color-1-4b7fff75-56a4-4cbc-a5e3-3fad9b8215cc)">Vertigo</a></li><li><a href="../whiplash/" style="color:var(--bde-palette-color-1-4b7fff75-56a4-4cbc-a5e3-3fad9b8215cc)">Whiplash</a></li><li><a href="../work-injury/" style="color:var(--bde-palette-color-1-4b7fff75-56a4-4cbc-a5e3-3fad9b8215cc)">Work injury</a></li></ul>
 </div>
-</div><div class="bde-div-238-163 bde-div">
+</div><div class="bde-div-238-1804 bde-div">
   
   
 	
 
 
 
-<h4 class="bde-heading-238-164 bde-heading">
+<h4 class="bde-heading-238-1805 bde-heading">
 Services
-</h4><div class="bde-rich-text-238-165 bde-rich-text breakdance-rich-text-styles">
-<ul><li><a href="../acupuncture/" style="color:var(--bde-palette-color-1-4b7fff75-56a4-4cbc-a5e3-3fad9b8215cc)">Acupuncture</a></li><li><a href="../chiropractic/" style="color:var(--bde-palette-color-1-4b7fff75-56a4-4cbc-a5e3-3fad9b8215cc)">Chiropractic Care</a></li><li><a href="../laser-therapy/" style="color:var(--bde-palette-color-1-4b7fff75-56a4-4cbc-a5e3-3fad9b8215cc)">Laser Therapy</a></li><li><a href="../massage-therapy/" style="color:var(--bde-palette-color-1-4b7fff75-56a4-4cbc-a5e3-3fad9b8215cc)">Massage Therapy</a></li><li><a href="../nutrition/" style="color:var(--bde-palette-color-1-4b7fff75-56a4-4cbc-a5e3-3fad9b8215cc)">Nutrition Support</a></li><li><a href="../wellness-care/" style="color:var(--bde-palette-color-1-4b7fff75-56a4-4cbc-a5e3-3fad9b8215cc)">Wellness Care</a></li></ul>
+</h4><div class="bde-rich-text-238-1806 bde-rich-text breakdance-rich-text-styles">
+<ul><li><a href="../acupuncture/" style="color:var(--bde-palette-color-1-4b7fff75-56a4-4cbc-a5e3-3fad9b8215cc)">Acupuncture</a></li><li><a href="../chiropractic/" style="color:var(--bde-palette-color-1-4b7fff75-56a4-4cbc-a5e3-3fad9b8215cc)">Chiropractic Care</a></li><li><a href="../laser-therapy/" style="color:var(--bde-palette-color-1-4b7fff75-56a4-4cbc-a5e3-3fad9b8215cc)">Laser Therapy</a></li><li><a href="../massage-therapy/" style="color:var(--bde-palette-color-1-4b7fff75-56a4-4cbc-a5e3-3fad9b8215cc)">Massage Therapy</a></li><li><a href="../nutrition/" style="color:var(--bde-palette-color-1-4b7fff75-56a4-4cbc-a5e3-3fad9b8215cc)">Nutrition Support</a></li><li><a href="../pediatric/" style="color:var(--bde-palette-color-1-4b7fff75-56a4-4cbc-a5e3-3fad9b8215cc)">Pediatric Chiropractic</a></li><li><a href="../shockwave/" style="color:var(--bde-palette-color-1-4b7fff75-56a4-4cbc-a5e3-3fad9b8215cc)">Shockwave Therapy</a></li><li><a href="../wellness-care/" style="color:var(--bde-palette-color-1-4b7fff75-56a4-4cbc-a5e3-3fad9b8215cc)">Wellness Care</a></li></ul>
 </div>
 </div>
 </div>
@@ -668,7 +541,13 @@ Services
 
 
 
+<div class="bde-image-238-103 bde-image">
+<figure class="breakdance-image breakdance-image--529">
+	<div class="breakdance-image-container">
+		<div class="breakdance-image-clip"><img class="breakdance-image-object" src="../wp-content/uploads/2026/07/footer-logo-square-300x300.webp" width="300" height="300" srcset="../wp-content/uploads/2026/07/footer-logo-square.webp 800w, ../wp-content/uploads/2026/07/footer-logo-square-300x300.webp 300w, ../wp-content/uploads/2026/07/footer-logo-square-150x150.webp 150w, ../wp-content/uploads/2026/07/footer-logo-square-768x768.webp 768w" sizes="(max-width: 800px) 100vw, 800px" loading="lazy"></div>
+	</div></figure>
 
+</div>
 </div><div class="bde-column-238-104 bde-column">
   
   
@@ -705,7 +584,7 @@ Call us at (860) 454-0942 or book your first visit online.
     
     
     
-    <a class="breakdance-link button-atom button-atom--custom bde-button__button" href="./" target="_self" data-type="url"  >
+    <a class="breakdance-link button-atom button-atom--custom bde-button__button" href="https://clinic.patienthealthcenters.org/book?clinic=CUTTIR23BDCT" target="_blank" data-type="url"  >
 
     
         <span class="button-atom__text">Come see what we can do for you!</span>
@@ -987,17 +866,17 @@ Copyright © 2026 Local Ember. All Rights Reserved.
 </section>        <script type="speculationrules">
 {"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/plugins/breakdance/plugin/themeless/themes/breakdance-zero/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
 </script>
-<script></script><style id="global-styles-inline-css">
+<style id="global-styles-inline-css">
 :root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:where(body) { margin: 0; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
 /*# sourceURL=global-styles-inline-css */
 </style>
 <script id="wp-emoji-settings" type="application/json">
-{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"https://example.com/wp-includes/js/wp-emoji-release.min.js?ver=7.0.2"}}
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"https://PLACEHOLDER_DOMAIN/wp-includes/js/wp-emoji-release.min.js?ver=7.0.2"}}
 </script>
 <script type="module">
 /*! This file is auto-generated */
 const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(window._wpemojiSettings=a,"wpEmojiSettingsSupports"),s=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const a=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===a[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,a){let r;const o=(r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),s=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(e=>{s[e]=t(o,e,n,a)}),s}function r(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}a.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),c.toString(),p.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"});const r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=e=>{i(n=e.data),r.terminate(),t(n)})}catch(e){}i(n=f(s,u,c,p))}t(n)}).then(e=>{for(const n in e)a.supports[n]=e[n],a.supports.everything=a.supports.everything&&a.supports[n],"flag"!==n&&(a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&a.supports[n]);var t;a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&!a.supports.flag,a.supports.everything||((t=a.source||{}).concatemoji?r(t.concatemoji):t.wpemoji&&t.twemoji&&(r(t.twemoji),r(t.wpemoji)))});
-//# sourceURL=https://example.com/wp-includes/js/wp-emoji-loader.min.js
+//# sourceURL=https://PLACEHOLDER_DOMAIN/wp-includes/js/wp-emoji-loader.min.js
 </script>
 <script src='../wp-content/plugins/breakdance/plugin/global-scripts/breakdance-utils.js' defer></script>
 <script src='../wp-content/plugins/breakdance/subplugins/breakdance-elements/dependencies-files/breakdance-header-builder@1/header-builder.js' defer></script>
@@ -1006,7 +885,7 @@ const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(
         window.BreakdanceFrontend = {}
     }
 
-    window.BreakdanceFrontend.data = {"homeUrl":"https:\/\/example.com","ajaxUrl":"https:\/\/example.com\/wp-admin\/admin-ajax.php","elementsPluginUrl":"https:\/\/example.com\/wp-content\/plugins\/breakdance\/subplugins\/breakdance-elements\/","BASE_BREAKPOINT_ID":"breakpoint_base","breakpoints":[{"id":"breakpoint_base","label":"Desktop","defaultPreviewWidth":"100%"},{"id":"breakpoint_tablet_landscape","label":"Tablet Landscape","defaultPreviewWidth":1024,"maxWidth":1119},{"id":"breakpoint_tablet_portrait","label":"Tablet Portrait","defaultPreviewWidth":768,"maxWidth":1023},{"id":"breakpoint_phone_landscape","label":"Phone Landscape","defaultPreviewWidth":480,"maxWidth":767},{"id":"breakpoint_phone_portrait","label":"Phone Portrait","defaultPreviewWidth":400,"maxWidth":479}],"subscriptionMode":"pro"} }) </script>
+    window.BreakdanceFrontend.data = {"homeUrl":"https:\/\/PLACEHOLDER_DOMAIN","ajaxUrl":"https:\/\/PLACEHOLDER_DOMAIN\/wp-admin\/admin-ajax.php","elementsPluginUrl":"https:\/\/PLACEHOLDER_DOMAIN\/wp-content\/plugins\/breakdance\/subplugins\/breakdance-elements\/","BASE_BREAKPOINT_ID":"breakpoint_base","breakpoints":[{"id":"breakpoint_base","label":"Desktop","defaultPreviewWidth":"100%"},{"id":"breakpoint_tablet_landscape","label":"Tablet Landscape","defaultPreviewWidth":1024,"maxWidth":1119},{"id":"breakpoint_tablet_portrait","label":"Tablet Portrait","defaultPreviewWidth":768,"maxWidth":1023},{"id":"breakpoint_phone_landscape","label":"Phone Landscape","defaultPreviewWidth":480,"maxWidth":767},{"id":"breakpoint_phone_portrait","label":"Phone Portrait","defaultPreviewWidth":400,"maxWidth":479}],"subscriptionMode":"pro"} }) </script>
 <script>document.addEventListener('DOMContentLoaded', function(){ new BreakdanceHeaderBuilder(".breakdance .bde-header-builder-241-100", "100", false); }) </script>
 <script>document.addEventListener('DOMContentLoaded', function(){ 
 new AwesomeMenu(".breakdance .bde-menu-241-114 .breakdance-menu", {
